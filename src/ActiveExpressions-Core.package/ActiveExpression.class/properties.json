@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "sl 12/22/2017 9:55",
+	"instvars" : [
+		"monitoredBlock" ],
+	"name" : "ActiveExpression",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

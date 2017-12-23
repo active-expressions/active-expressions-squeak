@@ -1,0 +1,4 @@
+OrderedDictionary {
+	'src\/ActiveExpressions-Core.package' : #SquotCypressCodeSerializer,
+	'src\/ActiveExpressions-Tests.package' : #SquotCypressCodeSerializer,
+}
