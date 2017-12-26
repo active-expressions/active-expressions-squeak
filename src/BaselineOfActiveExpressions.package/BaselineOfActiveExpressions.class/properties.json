@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfActiveExpressions",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfActiveExpressions",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
