@@ -1,8 +1,10 @@
 {
 	"class" : {
-		 },
+		"monitoring:" : "sl 12/26/2017 09:55" },
 	"instance" : {
-		"monitoredBlock:" : "sl 12/23/2017 10:14",
-		"monitoredBlock" : "sl 12/23/2017 10:14" } }
-
-
+		"callbacks" : "sl 12/26/2017 10:15",
+		"monitoredBlock" : "sl 12/23/2017 10:14",
+		"onChangeDo:" : "sl 12/26/2017 10:11",
+		"printOn:" : "sl 12/26/2017 10:04",
+		"registerCallback:" : "sl 12/26/2017 10:13",
+		"setMonitoredBlock:" : "sl 12/26/2017 09:53" } }

@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "sl 12/22/2017 9:55",
+	"commentStamp" : "",
 	"instvars" : [
-		"monitoredBlock" ],
+		"monitoredBlock",
+		"callbacks" ],
 	"name" : "ActiveExpression",
 	"pools" : [
 		 ],
