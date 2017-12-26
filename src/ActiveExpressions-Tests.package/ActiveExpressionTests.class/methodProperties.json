@@ -2,4 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testTruth" : "sl 12/23/2017 10:18" } }
+		"setUp" : "sl 12/26/2017 18:51",
+		"testCallbackInvocationWhenValueIdentityHasChanged" : "sl 12/26/2017 10:35",
+		"testCallbackInvocationWith1Argument" : "sl 12/26/2017 19:05",
+		"testCallbackInvocationWith2Arguments" : "sl 12/26/2017 19:05",
+		"testCallbackInvocationWithMoreThan3ArgumentsFails" : "sl 12/26/2017 19:01",
+		"testInitializesToCurrentValue" : "sl 12/26/2017 18:51",
+		"testNoCallbackInvocationWhenValueIdentityHasNotChanged" : "sl 12/26/2017 18:57",
+		"testRemembersOldValue" : "sl 12/26/2017 19:09" } }

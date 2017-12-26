@@ -1,4 +1,6 @@
 instance creation
 monitoring: aBlock
 
-	^ self new setMonitoredBlock: aBlock
+	^ self basicNew 
+			setMonitoredBlock: aBlock;
+			initialize

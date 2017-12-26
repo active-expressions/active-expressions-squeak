@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"value",
+		"activeExpression",
+		"callbackCount" ],
 	"name" : "ActiveExpressionTests",
 	"pools" : [
 		 ],
