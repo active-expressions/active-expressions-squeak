@@ -8,7 +8,8 @@
 	"instvars" : [
 		"monitoredBlock",
 		"callbacks",
-		"lastValue" ],
+		"lastValue",
+		"callbacksEnabled" ],
 	"name" : "ActiveExpression",
 	"pools" : [
 		 ],

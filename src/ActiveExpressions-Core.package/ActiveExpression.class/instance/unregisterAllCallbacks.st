@@ -1,0 +1,4 @@
+callbacks
+unregisterAllCallbacks
+
+	callbacks := nil

@@ -1,5 +1,5 @@
 callbacks
-invokeCallback: aBlock lastValue: old newValue: new
+invokeCallback: aBlock oldValue: old newValue: new
 
 	aBlock argumentCount = 0 ifTrue: [^ aBlock value].
 	aBlock argumentCount = 1 ifTrue: [^ aBlock valueWithArguments: { new }].

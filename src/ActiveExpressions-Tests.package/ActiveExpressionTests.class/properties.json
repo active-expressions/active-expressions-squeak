@@ -8,7 +8,9 @@
 	"instvars" : [
 		"value",
 		"activeExpression",
-		"callbackCount" ],
+		"callbackCount",
+		"callback",
+		"expression" ],
 	"name" : "ActiveExpressionTests",
 	"pools" : [
 		 ],

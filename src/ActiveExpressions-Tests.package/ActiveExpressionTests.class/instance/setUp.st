@@ -2,6 +2,8 @@ running
 setUp
 
 	value := 42.
+	expression := [value].
 	callbackCount := 0.
-	activeExpression := ActiveExpression monitoring: [value].
-	activeExpression onChangeDo: [callbackCount := callbackCount + 1]
+	callback := [callbackCount := callbackCount + 1].
+	activeExpression := ActiveExpression monitoring: expression.
+	activeExpression onChangeDo: callback
