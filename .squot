@@ -1,5 +1,6 @@
 OrderedDictionary {
 	'src\/ActiveExpressions-Core.package' : #SquotCypressCodeSerializer,
+	'src\/ActiveExpressions-ChangeDetection.package' : #SquotCypressCodeSerializer,
 	'src\/ActiveExpressions-Tests.package' : #SquotCypressCodeSerializer,
 	'src\/BaselineOfActiveExpressions.package' : #SquotCypressCodeSerializer
 }
