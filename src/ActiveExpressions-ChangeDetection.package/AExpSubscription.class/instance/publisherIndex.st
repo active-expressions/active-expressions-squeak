@@ -1,0 +1,4 @@
+private
+publisherIndex
+
+	^ 1

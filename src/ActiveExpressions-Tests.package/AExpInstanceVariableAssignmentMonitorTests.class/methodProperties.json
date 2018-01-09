@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"log" : "sl 1/9/2018 19:13",
+		"log:" : "sl 1/9/2018 19:11",
+		"selector" : "sl 1/9/2018 19:09",
+		"setUp" : "sl 1/9/2018 20:11",
+		"tearDown" : "sl 1/9/2018 20:23",
+		"testNoNotificationsAfterUnsubscribing" : "sl 1/9/2018 19:48",
+		"testNotificationsWhenInstanceVariableChanges" : "sl 1/9/2018 19:37",
+		"testNotificationsWhenSuperclassInstanceVariableChanges" : "sl 1/9/2018 20:13",
+		"testSubscriptionsExpireIfPublisherIsUnreferenced" : "sl 1/9/2018 21:05",
+		"testSubscriptionsExpireIfSubscriberIsUnreferenced" : "sl 1/9/2018 20:45",
+		"testSubscriptionsHoldObjectsWeakly" : "sl 1/9/2018 20:32",
+		"variable:of:changedTo:" : "sl 1/9/2018 19:13" } }

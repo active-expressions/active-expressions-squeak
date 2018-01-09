@@ -1,0 +1,4 @@
+accessing
+variableOfInterest
+	
+	^ variableOfInterest

@@ -1,0 +1,1 @@
+I weakly hold my information. If any of my variables equals nil, I am considered undefined.

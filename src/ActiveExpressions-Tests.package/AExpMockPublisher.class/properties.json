@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"variableOfInterest" ],
+	"name" : "AExpMockPublisher",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

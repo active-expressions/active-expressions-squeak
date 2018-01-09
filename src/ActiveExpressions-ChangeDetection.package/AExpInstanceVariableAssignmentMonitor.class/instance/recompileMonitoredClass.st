@@ -1,0 +1,4 @@
+private
+recompileMonitoredClass
+
+	self monitoredClass compileAll

@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-ChangeDetection",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"variablesToBeReplaced" ],
+	"name" : "AExpInstanceVariableAssignmentRewriter",
+	"pools" : [
+		 ],
+	"super" : "OhmSourceRewriter",
+	"type" : "normal" }

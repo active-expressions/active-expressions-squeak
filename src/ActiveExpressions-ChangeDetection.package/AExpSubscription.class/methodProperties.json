@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"publisher:subscriber:selector:" : "sl 1/8/2018 21:20" },
+	"instance" : {
+		"initializeWithPublisher:subscriber:selector:" : "sl 1/8/2018 21:18",
+		"isObsolete" : "sl 1/9/2018 19:46",
+		"publisher" : "sl 1/8/2018 21:12",
+		"publisherIndex" : "sl 1/8/2018 21:13",
+		"selector" : "sl 1/8/2018 21:13",
+		"selectorIndex" : "sl 1/8/2018 21:13",
+		"subscriber" : "sl 1/8/2018 21:13",
+		"subscriberIndex" : "sl 1/8/2018 21:13" } }

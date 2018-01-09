@@ -1,4 +1,0 @@
-dummy
-dummy
-
-	^ self

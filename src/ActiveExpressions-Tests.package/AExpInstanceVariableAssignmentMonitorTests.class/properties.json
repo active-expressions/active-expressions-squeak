@@ -1,0 +1,16 @@
+{
+	"category" : "ActiveExpressions-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"log",
+		"publisher",
+		"subclassedPublisher" ],
+	"name" : "AExpInstanceVariableAssignmentMonitorTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

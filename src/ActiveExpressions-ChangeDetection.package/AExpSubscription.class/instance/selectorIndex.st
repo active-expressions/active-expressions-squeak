@@ -1,0 +1,4 @@
+private
+selectorIndex
+
+	^ 3

@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-ChangeDetection",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "sl 1/8/2018 22:05",
+	"instvars" : [
+		"variables" ],
+	"name" : "AExpSubscription",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

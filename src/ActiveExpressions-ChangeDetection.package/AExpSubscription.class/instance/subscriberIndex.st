@@ -1,0 +1,4 @@
+private
+subscriberIndex
+
+	^ 2

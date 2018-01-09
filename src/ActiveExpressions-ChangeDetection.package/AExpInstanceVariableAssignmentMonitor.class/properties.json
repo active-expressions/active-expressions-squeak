@@ -3,11 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"InstanceDict" ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "AExpDummyClass",
+		"monitoredClass",
+		"subscriptions" ],
+	"name" : "AExpInstanceVariableAssignmentMonitor",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"hasMonitoredVariables" : "sl 1/9/2018 20:36",
+		"instVarMonitor" : "sl 1/8/2018 20:58",
+		"monitoredInstVarNames" : "sl 1/8/2018 23:45" },
+	"instance" : {
+		"afterAssignmentToVariable:notify:using:" : "sl 1/9/2018 19:23",
+		"monitoredInstVarNamed:put:" : "sl 1/8/2018 21:08",
+		"unmonitorAllVariables" : "sl 1/9/2018 20:25",
+		"unsubscribe:fromAssignmentNotificationsFor:" : "sl 1/9/2018 19:36" } }
