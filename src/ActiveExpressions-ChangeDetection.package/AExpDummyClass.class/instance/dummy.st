@@ -1,0 +1,4 @@
+dummy
+dummy
+
+	^ self
