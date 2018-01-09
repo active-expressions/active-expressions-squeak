@@ -1,6 +1,6 @@
 # Squeak Active Expressions [![Build Status][travis_b]][travis_url] [![Coverage Status][coveralls_b]][coveralls_url]
 
-Squeak-ActiveExpressions aims to offer a Squeak implementation of [Active Expressions] - a simple state-based reactive concept which eases the implementation of other state-based reactive concepts by offering its change detection and change propagation facilities to its users through a simple to use syntax.
+Squeak-ActiveExpressions aims to offer a Squeak implementation of [Active Expressions] - a simple state-based reactive concept.
 
 The first implementation of Active Expressions was in [JavaScript][JavaScript Implementation].
 
@@ -17,7 +17,7 @@ Metacello new
 
 ## History
 
-This project was started as part of the Software Architecture Group's seminar «Programming Languages: Design and Implementation» held at the Hasso-Plattner Institute.
+This project was started as part of the [Software Architecture Group]'s seminar «Programming Languages: Design and Implementation» held at the Hasso-Plattner Institute.
 
 [travis_b]: https://travis-ci.org/stlutz/Squeak-ActiveExpressions.svg?branch=master
 [travis_url]: https://travis-ci.org/stlutz/Squeak-ActiveExpressions
@@ -27,3 +27,5 @@ This project was started as part of the Software Architecture Group's seminar «
 [Active Expressions]: http://programming-journal.org/2017/1/12/
 [JavaScript Implementation]: https://github.com/active-expressions/active-expressions
 [Metacello]: https://github.com/Metacello/metacello
+
+[Software Architecture Group]: https://github.com/hpi-swa

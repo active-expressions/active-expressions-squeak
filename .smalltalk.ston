@@ -15,7 +15,7 @@ SmalltalkCISpec {
 		#hidePassingTests : true,
 		#defaultTimeout : 30,
 		#coverage: {
-			#categories : [ 'ActiveExpressions-Core' ]
+			#categories : [ 'ActiveExpressions-Core', 'ActiveExpressions-ChangeDetection' ]
 		}
 	}
 }
