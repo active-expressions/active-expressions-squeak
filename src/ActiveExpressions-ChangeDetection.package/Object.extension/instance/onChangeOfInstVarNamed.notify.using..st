@@ -1,5 +1,5 @@
 *ActiveExpressions-ChangeDetection
-afterAssignmentToVariable: variableName notify: anObject using: selector
+onChangeOfInstVarNamed: variableName notify: anObject using: selector
 
 	self class instVarMonitor 
 		subscribe: anObject

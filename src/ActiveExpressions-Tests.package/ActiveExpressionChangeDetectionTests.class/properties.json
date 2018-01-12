@@ -6,13 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"value",
 		"activeExpression",
-		"callbackCount",
 		"callback",
 		"expression",
-		"lastValue" ],
-	"name" : "ActiveExpressionTests",
+		"publisher" ],
+	"name" : "ActiveExpressionChangeDetectionTests",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

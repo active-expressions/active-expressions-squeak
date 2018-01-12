@@ -2,7 +2,7 @@ tests
 testSubscriptionsExpireIfPublisherIsUnreferenced
 
 	AExpMockPublisher new 
-		afterAssignmentToVariable: 'variableOfInterest' 
+		onChangeOfInstVarNamed: 'variableOfInterest' 
 		notify: self
 		using: self selector.
 	Smalltalk garbageCollect.

@@ -1,4 +1,4 @@
 callbacks
 onChangeDo: aBlock
 
-	self registerCallback: aBlock
+	self addCallback: aBlock

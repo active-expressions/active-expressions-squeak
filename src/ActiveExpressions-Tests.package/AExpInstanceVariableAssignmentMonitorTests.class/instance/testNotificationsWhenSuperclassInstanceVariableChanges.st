@@ -2,7 +2,7 @@ tests
 testNotificationsWhenSuperclassInstanceVariableChanges
 
 	subclassedPublisher 
-		afterAssignmentToVariable: 'variableOfInterest' 
+		onChangeOfInstVarNamed: 'variableOfInterest' 
 		notify: self 
 		using: self selector.
 	subclassedPublisher variableOfInterest: 42.

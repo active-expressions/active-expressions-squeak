@@ -1,4 +1,4 @@
 callbacks
-unregisterAllCallbacks
+removeAllCallbacks
 
 	callbacks := nil

@@ -1,4 +1,4 @@
 callbacks
-registerCallback: aBlock
+addCallback: aBlock
 
 	self callbacks add: aBlock

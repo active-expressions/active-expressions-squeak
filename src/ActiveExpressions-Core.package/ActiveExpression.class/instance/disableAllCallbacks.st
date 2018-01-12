@@ -1,4 +1,4 @@
 callbacks
-disableCallbacks
+disableAllCallbacks
 
 	self callbacksEnabled: false

@@ -1,6 +1,6 @@
 tests - callbacks
 testCallbackInvocationWhenValueIdentityHasChanged
 
-	value := 2.
+	value := self newValue.
 	activeExpression update.
 	self assert: 1 equals: callbackCount

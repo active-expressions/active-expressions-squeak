@@ -1,0 +1,4 @@
+methods
+unaryMessage
+
+	^ self variableOfInterest

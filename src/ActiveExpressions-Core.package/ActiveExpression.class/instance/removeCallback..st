@@ -1,4 +1,4 @@
 callbacks
-unregisterCallback: aBlock
+removeCallback: aBlock
 
 	self callbacks remove: aBlock

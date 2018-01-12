@@ -1,6 +1,6 @@
 tests
 testRemembersOldValue
 
-	value := 1.
+	value := self newValue.
 	activeExpression update.
-	self assert: 1 equals: activeExpression lastValue
+	self assert: lastValue equals: activeExpression lastValue

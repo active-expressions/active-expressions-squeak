@@ -2,5 +2,12 @@
 	"class" : {
 		"compilerClass" : "sl 1/9/2018 19:19" },
 	"instance" : {
+		"binaryMessage" : "sl 1/12/2018 09:58",
+		"keywordMessage1Arg" : "sl 1/12/2018 10:03",
+		"keywordMessage2Args" : "sl 1/12/2018 10:03",
+		"keywordMessage3Args" : "sl 1/12/2018 10:10",
+		"otherVariable" : "sl 1/10/2018 19:29",
+		"otherVariable:" : "sl 1/10/2018 19:29",
+		"unaryMessage" : "sl 1/12/2018 09:57",
 		"variableOfInterest" : "sl 1/9/2018 19:07",
 		"variableOfInterest:" : "sl 1/9/2018 19:07" } }

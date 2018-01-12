@@ -1,7 +1,7 @@
 tests - callbacks
-testUnregisteredCallbacksAreNotInvoked
+testDisableAllCallbacks
 
-	activeExpression removeCallback: callback.
+	activeExpression disableAllCallbacks.
 	value := self newValue.
 	activeExpression update.
 	self assert: 0 equals: callbackCount

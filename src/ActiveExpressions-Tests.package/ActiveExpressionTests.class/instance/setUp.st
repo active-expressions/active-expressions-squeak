@@ -1,7 +1,8 @@
 running
 setUp
 
-	value := 42.
+	lastValue := 100.
+	value := self newValue.
 	expression := [value].
 	callbackCount := 0.
 	callback := [callbackCount := callbackCount + 1].

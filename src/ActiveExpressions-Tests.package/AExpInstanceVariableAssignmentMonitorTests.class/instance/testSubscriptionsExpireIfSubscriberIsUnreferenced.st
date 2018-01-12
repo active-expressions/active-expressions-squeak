@@ -2,7 +2,7 @@ tests
 testSubscriptionsExpireIfSubscriberIsUnreferenced
 
 	publisher 
-		afterAssignmentToVariable: 'variableOfInterest' 
+		onChangeOfInstVarNamed: 'variableOfInterest' 
 		notify: Object new 
 		using: self selector.
 	Smalltalk garbageCollect.
