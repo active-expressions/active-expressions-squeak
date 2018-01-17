@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Examples",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AExpAnnotationMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }
