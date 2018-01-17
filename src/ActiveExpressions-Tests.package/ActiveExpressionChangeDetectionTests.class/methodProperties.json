@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"expectedFindings" : "sl 1/13/2018 00:05",
-		"setUp" : "sl 1/10/2018 20:09",
+		"setUp" : "sl 1/17/2018 17:00",
+		"testAutomaticChangePropagation" : "sl 1/17/2018 18:51",
 		"testInstVarsInMethodsWithKeywordMessagesAreFound" : "sl 1/13/2018 00:22",
 		"testInstVarsInQuickMethodsAreFound" : "sl 1/12/2018 23:03" } }
