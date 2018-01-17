@@ -1,21 +1,23 @@
 {
 	"class" : {
 		"forClass:" : "sl 1/8/2018 21:07",
-		"instanceDict" : "sl 1/9/2018 19:44" },
+		"instanceDict" : "sl 1/9/2018 19:44",
+		"reset" : "sl 1/17/2018 20:05" },
 	"instance" : {
 		"addSubscription:forVariable:" : "sl 1/8/2018 23:37",
+		"isResponsibleFor:" : "sl 1/17/2018 20:02",
 		"monitoredClass" : "sl 1/8/2018 21:06",
 		"monitoredClass:" : "sl 1/8/2018 21:06",
 		"monitoredVariables" : "sl 1/9/2018 20:43",
 		"notify:thatVariable:changedTo:" : "sl 1/8/2018 22:41",
 		"recompileMonitoredClass" : "sl 1/8/2018 23:05",
 		"removeObsoleteSubscriptions" : "sl 1/9/2018 20:42",
-		"removeSubscription:forVariable:" : "sl 1/8/2018 23:36",
+		"removeSubscription:forVariable:" : "sl 1/17/2018 20:02",
 		"subscribe:toVariable:of:selector:" : "sl 1/8/2018 22:47",
 		"subscriptions" : "sl 1/8/2018 16:25",
 		"subscriptionsForVariable:" : "sl 1/8/2018 21:35",
 		"superclassMonitor" : "sl 1/8/2018 23:02",
 		"unsubscribe:fromVariable:of:" : "sl 1/9/2018 19:47",
-		"unsubscribeAll" : "sl 1/9/2018 20:43",
+		"unsubscribeAll" : "sl 1/17/2018 19:50",
 		"variable:of:changedTo:" : "sl 1/8/2018 22:39",
 		"variableComesFromSuperclass:" : "sl 1/9/2018 20:10" } }

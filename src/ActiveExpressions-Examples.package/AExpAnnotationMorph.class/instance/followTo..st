@@ -1,4 +1,4 @@
 following
 followTo: newBounds
 
-	self left: newBounds left
+	self topLeft: newBounds topRight

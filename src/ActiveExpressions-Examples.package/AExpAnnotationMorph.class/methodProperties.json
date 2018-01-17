@@ -3,9 +3,10 @@
 		 },
 	"instance" : {
 		"activeExpression" : "sl 1/17/2018 19:11",
+		"delete" : "sl 1/17/2018 20:43",
 		"follow:" : "sl 1/17/2018 19:24",
-		"followTo:" : "sl 1/17/2018 19:27",
+		"followTo:" : "sl 1/17/2018 20:44",
 		"setActiveExpression:" : "sl 1/17/2018 19:12",
-		"startFollowing:" : "sl 1/17/2018 19:27",
-		"step" : "sl 1/17/2018 19:13",
+		"startFollowing:" : "sl 1/17/2018 20:42",
+		"step" : "sl 1/17/2018 20:43",
 		"stopFollowing" : "sl 1/17/2018 19:18" } }
