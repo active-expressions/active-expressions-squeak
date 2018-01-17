@@ -2,4 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"activeExpression" : "sl 1/17/2018 19:11",
+		"follow:" : "sl 1/17/2018 19:24",
+		"followTo:" : "sl 1/17/2018 19:27",
+		"setActiveExpression:" : "sl 1/17/2018 19:12",
+		"startFollowing:" : "sl 1/17/2018 19:27",
+		"step" : "sl 1/17/2018 19:13",
+		"stopFollowing" : "sl 1/17/2018 19:18" } }
