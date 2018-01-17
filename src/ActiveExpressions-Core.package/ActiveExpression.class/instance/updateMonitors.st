@@ -1,5 +1,5 @@
 change detection
-disable
+updateMonitors
 
 	self uninstallMonitors.
-	self disableAllCallbacks
+	self installMonitors

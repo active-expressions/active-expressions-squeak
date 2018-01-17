@@ -1,4 +1,4 @@
 running
 tearDown
 
-	activeExpression disable
+	activeExpression ifNotNil: [activeExpression disable].
