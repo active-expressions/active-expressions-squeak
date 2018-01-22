@@ -2,12 +2,16 @@ baseline
 baseline: spec
 	<baseline>
 	spec for: #common do: [
-		spec baseline: 'Ohm' with: [
-			spec
-				repository: 'github://hpi-swa/ohm-s/packages'].
+		spec
+			project: 'RefactoringBrowser' with: [
+				spec
+					className: 'ConfigurationOfRefactoringBrowser';
+					versionString: #'stable';
+					loads: #( 'Core' );
+					repository: 'http://www.squeaksource.com/MetacelloRepository'].
 		spec
 			package: 'ActiveExpressions-ChangeDetection' with: [
-				spec requires: #('Ohm')];
+				spec requires: #('RefactoringBrowser')];
 			package: 'ActiveExpressions-Core' with: [
 				spec requires: #('ChangeDetection')];
 			package: 'ActiveExpressions-Tests' with: [

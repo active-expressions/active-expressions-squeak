@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"compile:in:notifying:ifFail:" : "sl 1/17/2018 21:27" } }
+		"compile:in:notifying:ifFail:" : "sl 1/22/2018 21:43",
+		"rewrite:in:" : "sl 1/22/2018 21:49" } }
