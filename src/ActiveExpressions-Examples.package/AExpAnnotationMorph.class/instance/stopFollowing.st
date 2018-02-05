@@ -1,4 +1,4 @@
 following
 stopFollowing
 
-	self activeExpression ifNotNil: [:aexp | aexp disable]
+	self activeExpression ifNotNil: [:aexp | aexp dispose]
