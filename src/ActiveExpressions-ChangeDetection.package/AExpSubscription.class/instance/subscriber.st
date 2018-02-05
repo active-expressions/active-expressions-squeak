@@ -1,4 +1,4 @@
 accessing
 subscriber
 
-	^ variables at: self subscriberIndex
+	^ weakReferences at: self subscriberIndex

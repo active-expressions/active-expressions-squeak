@@ -4,6 +4,6 @@
 	"instance" : {
 		"expectedFindings" : "sl 1/13/2018 00:05",
 		"setUp" : "sl 1/17/2018 17:00",
-		"testAutomaticChangePropagation" : "sl 1/17/2018 18:51",
-		"testInstVarsInMethodsWithKeywordMessagesAreFound" : "sl 1/13/2018 00:22",
-		"testInstVarsInQuickMethodsAreFound" : "sl 1/12/2018 23:03" } }
+		"testAutomaticChangePropagation" : "sl 2/4/2018 16:51",
+		"testInstVarsInMethodsWithKeywordMessagesAreFound" : "sl 2/4/2018 16:52",
+		"testInstVarsInQuickMethodsAreFound" : "sl 2/4/2018 16:52" } }

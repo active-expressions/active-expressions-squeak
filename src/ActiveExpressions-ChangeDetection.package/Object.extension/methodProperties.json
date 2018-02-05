@@ -1,11 +1,12 @@
 {
 	"class" : {
-		"compilerClass" : "sl 1/22/2018 21:54",
+		"compilerClass" : "sl 2/4/2018 19:03",
 		"hasMonitoredVariables" : "sl 1/9/2018 20:36",
-		"instVarMonitor" : "sl 1/8/2018 20:58",
+		"instVarMonitor" : "sl 2/4/2018 17:06",
 		"monitoredInstVarNames" : "sl 1/8/2018 23:45" },
 	"instance" : {
-		"monitoredInstVarNamed:put:" : "sl 1/8/2018 21:08",
-		"onChangeOfInstVarNamed:notify:using:" : "sl 1/11/2018 00:21",
-		"unmonitorAllVariables" : "sl 1/9/2018 20:25",
+		"instVar:of:changedFrom:to:" : "sl 2/4/2018 19:21",
+		"monitoredInstVarNamed:put:" : "sl 2/5/2018 20:06",
+		"onChangeOfInstVarNamed:notify:" : "sl 2/5/2018 18:59",
+		"unmonitorAllVariables" : "sl 2/5/2018 19:02",
 		"unsubscribe:fromAssignmentNotificationsFor:" : "sl 1/9/2018 19:36" } }

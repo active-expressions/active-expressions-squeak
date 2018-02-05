@@ -1,12 +1,13 @@
 {
 	"class" : {
-		"publisher:subscriber:selector:" : "sl 1/8/2018 21:20" },
+		"publisher:subscriber:variableName:owner:" : "sl 2/5/2018 14:56" },
 	"instance" : {
-		"initializeWithPublisher:subscriber:selector:" : "sl 1/8/2018 21:18",
-		"isObsolete" : "sl 1/9/2018 19:46",
-		"publisher" : "sl 1/8/2018 21:12",
+		"do:" : "sl 2/5/2018 13:31",
+		"initializeWithPublisher:subscriber:variableName:owner:" : "sl 2/5/2018 14:57",
+		"owner" : "sl 2/5/2018 19:05",
+		"publisher" : "sl 2/5/2018 19:05",
 		"publisherIndex" : "sl 1/8/2018 21:13",
-		"selector" : "sl 1/8/2018 21:13",
-		"selectorIndex" : "sl 1/8/2018 21:13",
-		"subscriber" : "sl 1/8/2018 21:13",
-		"subscriberIndex" : "sl 1/8/2018 21:13" } }
+		"subscriber" : "sl 2/5/2018 19:05",
+		"subscriberIndex" : "sl 1/8/2018 21:13",
+		"terminate" : "sl 2/5/2018 14:55",
+		"variableName" : "sl 2/5/2018 19:05" } }

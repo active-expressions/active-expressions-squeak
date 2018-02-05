@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"classesNotToMonitor" : "sl 2/4/2018 16:36",
+		"disable" : "sl 2/4/2018 16:37",
+		"dispose" : "sl 2/4/2018 16:51",
+		"initialize" : "sl 2/4/2018 16:51",
+		"instVar:of:changedFrom:to:" : "sl 2/5/2018 20:07",
+		"instVarOperations" : "sl 2/4/2018 16:36",
+		"instVarsToMonitor" : "sl 2/4/2018 16:35",
+		"installMonitors" : "sl 2/4/2018 16:37",
+		"monitorInstVars" : "sl 2/5/2018 19:00",
+		"monitorInstVars:" : "sl 2/5/2018 19:01",
+		"uninstallMonitors" : "sl 2/4/2018 16:37",
+		"unmonitorInstVars:" : "sl 2/4/2018 16:38",
+		"updateMonitors" : "sl 2/4/2018 16:38" } }

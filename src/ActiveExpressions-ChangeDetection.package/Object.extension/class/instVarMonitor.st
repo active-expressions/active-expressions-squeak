@@ -1,4 +1,4 @@
 *ActiveExpressions-ChangeDetection
 instVarMonitor
 
-	^ AExpInstanceVariableAssignmentMonitor forClass: self
+	^ AExpInstVarMonitor forClass: self

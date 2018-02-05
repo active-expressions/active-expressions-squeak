@@ -1,4 +1,4 @@
 running
 tearDown
 
-	activeExpression ifNotNil: [activeExpression disable].
+	activeExpression ifNotNil: [activeExpression dispose].

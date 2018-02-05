@@ -9,8 +9,7 @@
 		"monitoredBlock",
 		"callbacks",
 		"lastValue",
-		"callbacksEnabled",
-		"monitoredInstVars" ],
+		"callbacksEnabled" ],
 	"name" : "ActiveExpression",
 	"pools" : [
 		 ],

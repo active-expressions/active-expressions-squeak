@@ -1,4 +1,4 @@
 accessing
 publisher
 
-	^ variables at: self publisherIndex
+	^ weakReferences at: self publisherIndex

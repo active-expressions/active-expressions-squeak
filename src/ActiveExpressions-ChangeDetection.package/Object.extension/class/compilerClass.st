@@ -1,6 +1,7 @@
 *ActiveExpressions-ChangeDetection
 compilerClass
 
-	^ self hasMonitoredVariables
+	^ Compiler
+	"^ self hasMonitoredVariables
 		ifTrue: [AExpCompiler]
-		ifFalse: [Compiler]
+		ifFalse: [Compiler]"

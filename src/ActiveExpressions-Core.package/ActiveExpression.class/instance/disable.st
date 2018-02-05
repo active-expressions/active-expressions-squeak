@@ -1,5 +1,4 @@
 change detection
 disable
 
-	self uninstallMonitors.
-	self disableAllCallbacks
+	self callbacksEnabled: false

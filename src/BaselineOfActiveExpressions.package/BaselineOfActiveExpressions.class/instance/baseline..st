@@ -7,7 +7,7 @@ baseline: spec
 				spec
 					className: 'ConfigurationOfRefactoringBrowser';
 					versionString: #'stable';
-					loads: #( 'Core' );
+					loads: #( 'AST-Core' );
 					repository: 'http://www.squeaksource.com/MetacelloRepository'].
 		spec
 			package: 'ActiveExpressions-ChangeDetection' with: [

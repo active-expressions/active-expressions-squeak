@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"monitoredInstVars" ],
+	"name" : "MonitoringActiveExpression",
+	"pools" : [
+		 ],
+	"super" : "ActiveExpression",
+	"type" : "normal" }
