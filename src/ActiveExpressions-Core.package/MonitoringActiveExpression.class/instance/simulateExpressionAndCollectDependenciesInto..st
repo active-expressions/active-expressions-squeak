@@ -11,7 +11,7 @@ simulateExpressionAndCollectDependenciesInto: aDictionary
 					| numArgs receiver selector |
 					numArgs := nextInstruction arguments at: 3.
 					receiver := context at: (context stackPtr - numArgs).
-					(self classesNotToMonitor includes: receiver class) ifFalse: [
+					(self shouldNotMonitorClass: receiver class) ifFalse: [
 						selector := nextInstruction arguments at: 1.
 						nextMethod :=  receiver class lookupSelector: selector.
 						nextMethod isReturnField ifTrue: [
@@ -21,7 +21,7 @@ simulateExpressionAndCollectDependenciesInto: aDictionary
 							foundVars := aDictionary at: receiver ifAbsentPut: [Set new].
 							foundVars add: (instVarNames at: instVarIndex + 1)]]] ifFalse: [
 				((self instVarOperations includes: nextInstruction selector) 
-				and: [(self classesNotToMonitor includes: context receiver class) not]) ifTrue: [
+				and: [(self shouldNotMonitorClass: context receiver class) not]) ifTrue: [
 					| instVarIndex instVarNames foundVars |
 					instVarIndex := nextInstruction argument + 1.
 					instVarNames :=context receiver class allInstVarNames.

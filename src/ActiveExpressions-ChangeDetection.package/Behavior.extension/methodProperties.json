@@ -2,4 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"hasInstVarNamed:" : "sl 1/8/2018 20:26" } }
+		"compilerClass" : "sl 2/7/2018 21:10",
+		"hasInstVarNamed:" : "sl 1/8/2018 20:26",
+		"hasMonitoredVariables" : "sl 2/7/2018 21:11",
+		"instVarMonitor" : "sl 2/7/2018 21:11",
+		"monitoredInstVarNames" : "sl 2/7/2018 21:11" } }

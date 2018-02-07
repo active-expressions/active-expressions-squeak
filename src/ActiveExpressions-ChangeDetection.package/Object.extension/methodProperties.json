@@ -1,9 +1,6 @@
 {
 	"class" : {
-		"compilerClass" : "sl 2/5/2018 22:14",
-		"hasMonitoredVariables" : "sl 1/9/2018 20:36",
-		"instVarMonitor" : "sl 2/4/2018 17:06",
-		"monitoredInstVarNames" : "sl 1/8/2018 23:45" },
+		 },
 	"instance" : {
 		"instVar:of:changedFrom:to:" : "sl 2/4/2018 19:21",
 		"monitoredInstVarNamed:put:" : "sl 2/5/2018 20:06",
