@@ -1,6 +1,5 @@
 change detection
-unmonitorInstVars: objectInstVarsDict
+unmonitorInstVars: objectInstVarCollection
 
-	objectInstVarsDict keysAndValuesDo: [:object :instVars |
-		instVars do: [:instVar | 
-			object unsubscribe: self fromAssignmentNotificationsFor: instVar]]
+	objectInstVarCollection do: [:assoc |
+		assoc key unsubscribe: self fromAssignmentNotificationsFor: assoc value]

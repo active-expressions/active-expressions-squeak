@@ -3,7 +3,7 @@ update
 
 	| newValue oldValue |
 	oldValue := self lastValue.
-	newValue := self currentValue.
+	self updateLastValue.
+	newValue := self lastValue.
 	oldValue ~~ newValue ifTrue: [
-		self setLastValue: newValue.
 		self propagateChangeFrom: oldValue to: newValue]

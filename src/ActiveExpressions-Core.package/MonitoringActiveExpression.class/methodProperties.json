@@ -2,17 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"classesNotToMonitor" : "sl 2/4/2018 16:36",
+		"classesNotToMonitor" : "sl 2/7/2018 16:10",
 		"dispose" : "sl 2/4/2018 16:51",
-		"initialize" : "sl 2/4/2018 16:51",
-		"instVar:of:changedFrom:to:" : "sl 2/5/2018 20:07",
+		"instVar:of:changedFrom:to:" : "sl 2/7/2018 12:17",
 		"instVarOperations" : "sl 2/4/2018 16:36",
-		"instVarsToMonitor" : "sl 2/4/2018 16:35",
-		"installMonitors" : "sl 2/4/2018 16:37",
-		"monitorInstVars" : "sl 2/5/2018 19:00",
-		"monitorInstVars:" : "sl 2/5/2018 19:01",
-		"monitoredInstVars" : "sl 2/5/2018 22:06",
+		"instVarsToMonitor" : "sl 2/7/2018 16:03",
+		"monitorInstVars:" : "sl 2/7/2018 16:06",
+		"monitoredInstVars" : "sl 2/7/2018 15:37",
 		"monitoredInstVars:" : "sl 2/5/2018 22:07",
+		"simulateExpressionAndCollectDependenciesInto:" : "sl 2/7/2018 15:44",
 		"uninstallMonitors" : "sl 2/4/2018 16:37",
-		"unmonitorInstVars:" : "sl 2/4/2018 16:38",
-		"updateMonitors" : "sl 2/4/2018 16:38" } }
+		"unmonitorInstVars:" : "sl 2/7/2018 16:05",
+		"updateLastValue" : "sl 2/7/2018 15:55",
+		"updateMonitorsAndLastValue" : "sl 2/7/2018 16:01",
+		"updateMonitorsTo:" : "sl 2/7/2018 16:08" } }

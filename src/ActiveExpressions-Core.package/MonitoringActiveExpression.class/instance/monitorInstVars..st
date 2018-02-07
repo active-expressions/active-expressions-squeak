@@ -1,7 +1,5 @@
 change detection
-monitorInstVars: objectInstVarsDict
+monitorInstVars: objectInstVarCollection
 
-	objectInstVarsDict keysAndValuesDo: [:object :instVars |
-		instVars do: [:instVar | object 
-									onChangeOfInstVarNamed: instVar
-									notify: self]]
+	objectInstVarCollection do: [:assoc |
+		assoc key onChangeOfInstVarNamed: assoc value notify: self]

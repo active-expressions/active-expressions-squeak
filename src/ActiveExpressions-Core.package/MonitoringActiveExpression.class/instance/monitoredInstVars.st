@@ -1,4 +1,4 @@
 accessing
 monitoredInstVars
 
-	^ monitoredInstVars ifNil: [monitoredInstVars := Dictionary new]
+	^ monitoredInstVars ifNil: [monitoredInstVars := OrderedCollection new]
