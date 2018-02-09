@@ -10,5 +10,5 @@
 		"testNoNotificationsAfterUnsubscribing" : "sl 2/5/2018 19:00",
 		"testNotificationsWhenInstanceVariableChanges" : "sl 2/5/2018 19:00",
 		"testNotificationsWhenSuperclassInstanceVariableChanges" : "sl 2/5/2018 19:00",
-		"testSubscriptionsExpireIfPublisherIsUnreferenced" : "sl 2/5/2018 19:00",
-		"testSubscriptionsExpireIfSubscriberIsUnreferenced" : "sl 2/5/2018 19:00" } }
+		"testSubscriptionsExpireIfPublisherIsUnreferenced" : "sl 2/9/2018 18:45",
+		"testSubscriptionsExpireIfSubscriberIsUnreferenced" : "sl 2/9/2018 18:46" } }

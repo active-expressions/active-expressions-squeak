@@ -1,4 +1,4 @@
 accessing
 subscriptions
 	
-	^ subscriptions ifNil: [subscriptions := Dictionary new]
+	^ subscriptions ifNil: [subscriptions := AExpDictionary new]

@@ -2,7 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"classesNotToMonitor" : "sl 2/7/2018 21:24",
 		"dispose" : "sl 2/4/2018 16:51",
 		"instVar:of:changedFrom:to:" : "sl 2/7/2018 12:17",
 		"instVarOperations" : "sl 2/4/2018 16:36",
@@ -10,8 +9,7 @@
 		"monitorInstVars:" : "sl 2/7/2018 16:06",
 		"monitoredInstVars" : "sl 2/7/2018 15:37",
 		"monitoredInstVars:" : "sl 2/5/2018 22:07",
-		"shouldNotMonitorClass:" : "sl 2/7/2018 21:27",
-		"simulateExpressionAndCollectDependenciesInto:" : "sl 2/7/2018 21:27",
+		"simulateExpressionAndCollectDependenciesInto:" : "sl 2/9/2018 18:43",
 		"uninstallMonitors" : "sl 2/4/2018 16:37",
 		"unmonitorInstVars:" : "sl 2/7/2018 16:05",
 		"updateLastValue" : "sl 2/7/2018 15:55",

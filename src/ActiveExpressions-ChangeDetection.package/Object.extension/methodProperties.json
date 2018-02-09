@@ -5,5 +5,6 @@
 		"instVar:of:changedFrom:to:" : "sl 2/4/2018 19:21",
 		"monitoredInstVarNamed:put:" : "sl 2/5/2018 20:06",
 		"onChangeOfInstVarNamed:notify:" : "sl 2/5/2018 18:59",
+		"shouldNotBeMonitored" : "sl 2/9/2018 17:56",
 		"unmonitorAllVariables" : "sl 2/5/2018 19:02",
 		"unsubscribe:fromAssignmentNotificationsFor:" : "sl 1/9/2018 19:36" } }

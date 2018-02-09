@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-ChangeDetection",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "sl 2/9/2018 17:57",
+	"instvars" : [
+		 ],
+	"name" : "AExpOrderedCollection",
+	"pools" : [
+		 ],
+	"super" : "OrderedCollection",
+	"type" : "normal" }

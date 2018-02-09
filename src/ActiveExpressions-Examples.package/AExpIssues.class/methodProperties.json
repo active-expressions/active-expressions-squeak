@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"atomicOperation" : "sl 2/7/2018 22:34",
+		"atomicOperation" : "sl 2/9/2018 18:39",
 		"instVar" : "sl 2/7/2018 22:04",
 		"instVar:" : "sl 2/7/2018 22:11",
 		"stack" : "sl 2/7/2018 22:31",
@@ -11,6 +11,6 @@
 		"stackSize:" : "sl 2/7/2018 22:31",
 		"stackTop" : "sl 2/7/2018 22:34",
 		"tearDown" : "sl 2/7/2018 22:09",
-		"testAtomicOperationsAreNotRespected" : "sl 2/7/2018 22:43",
+		"testAtomicOperationsAreNotRespected" : "sl 2/9/2018 18:41",
 		"testContextMethodsAreNotRewritten" : "sl 2/7/2018 22:12",
 		"testValueObjectsAlwaysChangeIdentity" : "sl 2/7/2018 22:13" } }

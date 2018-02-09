@@ -1,4 +1,4 @@
 accessing
 subscriptionsFor: variableName
 
-	 ^ self subscriptions at: variableName asSymbol ifAbsent: [OrderedCollection new]
+	 ^ self subscriptions at: variableName asSymbol ifAbsent: [#()]
