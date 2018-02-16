@@ -21,7 +21,8 @@ baseline: spec
 		spec
 			group: 'Core' with: #('ActiveExpressions-Core');
 			group: 'ChangeDetection' with: #('ActiveExpressions-ChangeDetection');
+			group: 'Examples' with: #('ActiveExpressions-Examples');
 			group: 'Tests' with: #('ActiveExpressions-Tests');
-			group: 'default' with: #('Core' 'ChangeDetection' 'Tests');
-			group: 'CompleteWithoutTests' with: #('Core' 'ChangeDetection');
+			group: 'default' with: #('Core' 'ChangeDetection' 'Tests' 'Examples');
+			group: 'CompleteWithoutTests' with: #('Core' 'ChangeDetection' 'Examples');
 			group: 'CompleteWithTests' with: #('CompleteWithoutTests' 'Tests')]
