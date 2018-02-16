@@ -1,7 +1,8 @@
 change detection
 simulateExpressionAndCollectDependenciesInto: aDictionary
 
-	^ thisContext 
+	self assert: thisContext sender notNil.
+	^ thisContext
 		runSimulated: [monitoredBlock value]
 		contextAtEachStep: [:context |
 			context receiver ~= self ifTrue: [

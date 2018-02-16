@@ -12,5 +12,6 @@
 		"stackTop" : "sl 2/7/2018 22:34",
 		"tearDown" : "sl 2/7/2018 22:09",
 		"testAtomicOperationsAreNotRespected" : "sl 2/9/2018 18:41",
-		"testContextMethodsAreNotRewritten" : "sl 2/7/2018 22:12",
+		"testContextMethodsInstVarsAreNotRewritten" : "sl 2/16/2018 21:46",
+		"testContextMethodsTempVarsAreNotRewritten" : "sl 2/16/2018 21:54",
 		"testValueObjectsAlwaysChangeIdentity" : "sl 2/7/2018 22:13" } }

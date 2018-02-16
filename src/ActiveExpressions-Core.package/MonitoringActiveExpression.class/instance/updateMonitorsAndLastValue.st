@@ -1,7 +1,10 @@
 change detection
 updateMonitorsAndLastValue
 
-	| dependencies |
+	| dependencies newValue |
 	dependencies := Dictionary new.
-	self setLastValue: (self simulateExpressionAndCollectDependenciesInto: dependencies).
+	[newValue := (self simulateExpressionAndCollectDependenciesInto: dependencies)] 
+		on: Error
+		do: [^ self].
+	self setLastValue: newValue.
 	self updateMonitorsTo: dependencies flattenAssociations.

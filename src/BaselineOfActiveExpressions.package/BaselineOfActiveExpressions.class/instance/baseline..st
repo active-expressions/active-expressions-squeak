@@ -15,7 +15,9 @@ baseline: spec
 			package: 'ActiveExpressions-Core' with: [
 				spec requires: #('ChangeDetection')];
 			package: 'ActiveExpressions-Tests' with: [
-				spec requires: #('Core')].
+				spec requires: #('Core')];
+			package: 'ActiveExpressions-Examples' with: [
+				spec requires: #('Core' 'ChangeDetection')].
 		spec
 			group: 'Core' with: #('ActiveExpressions-Core');
 			group: 'ChangeDetection' with: #('ActiveExpressions-ChangeDetection');

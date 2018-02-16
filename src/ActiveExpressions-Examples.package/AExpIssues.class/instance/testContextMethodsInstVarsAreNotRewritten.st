@@ -1,5 +1,5 @@
 tests
-testContextMethodsAreNotRewritten
+testContextMethodsInstVarsAreNotRewritten
 	"At the point of rewriting the source code (to intercept all instance variable assignments), there may be methods whose old (and therefor not rewritten) version is already in execution. Since the respective contexts do not adopt the new version, all instance variable assignments made in these contexts remain undetected."
 	| wasCalled |
 	self instVar: 0.
