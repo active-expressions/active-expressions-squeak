@@ -8,6 +8,7 @@
 		"setUp" : "sl 1/12/2018 10:17",
 		"tearDown" : "sl 1/9/2018 20:23",
 		"testNoNotificationsAfterUnsubscribing" : "sl 2/5/2018 19:00",
+		"testNotificationsWhenAssignmentsAreNested" : "sl 2/18/2018 14:46",
 		"testNotificationsWhenInstanceVariableChanges" : "sl 2/5/2018 19:00",
 		"testNotificationsWhenSuperclassInstanceVariableChanges" : "sl 2/5/2018 19:00",
 		"testSubscriptionsExpireIfPublisherIsUnreferenced" : "sl 2/9/2018 18:45",
