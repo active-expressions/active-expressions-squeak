@@ -1,1 +1,0 @@
-I am only special in that I will not be monitored, so that certain operations in the change detection mechanism don't cause infinite loops.

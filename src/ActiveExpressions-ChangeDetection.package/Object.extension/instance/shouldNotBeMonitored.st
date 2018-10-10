@@ -1,4 +1,0 @@
-*ActiveExpressions-ChangeDetection
-shouldNotBeMonitored
-
-	^ false

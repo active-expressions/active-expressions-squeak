@@ -1,4 +1,0 @@
-private
-subscriberIndex
-
-	^ 2

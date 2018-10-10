@@ -1,1 +1,0 @@
-I am responsible for a single class. I remember which instance variables of which instances of that class are of interest to whom. For this purpose I hold a collection of subscriptions, that are a triplet built as follows: { instanceVariableName . publisher . subscriber }.

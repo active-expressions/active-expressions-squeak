@@ -1,4 +1,0 @@
-accessing
-recompileMonitoredClass
-
-	self monitoredClass compileAll
