@@ -4,7 +4,7 @@ testContextMethodsInstVarsAreNotRewritten
 	| wasCalled |
 	self instVar: 0.
 	wasCalled := false.
-	aexp := MonitoringActiveExpression monitoring: [self instVar].
+	aexp := VarTraActiveExpression monitoring: [self instVar].
 	aexp onChangeDo: [wasCalled := true].
 	instVar := 1. "This line should be rewritten"
 	self assert: wasCalled.
