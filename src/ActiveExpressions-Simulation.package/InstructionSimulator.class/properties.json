@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Simulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"currentContext" ],
+	"name" : "InstructionSimulator",
+	"pools" : [
+		 ],
+	"super" : "InstructionClient",
+	"type" : "normal" }

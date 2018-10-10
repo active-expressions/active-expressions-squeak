@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "sl 10/10/2018 21:20",
+		"instVarAccessed:of:" : "sl 10/10/2018 22:27",
+		"instVarAccesses" : "sl 10/10/2018 21:46",
+		"litVarAccesses" : "sl 10/10/2018 21:46",
+		"pushLiteralVariable:" : "sl 10/10/2018 22:07",
+		"pushReceiverVariable:" : "sl 10/10/2018 22:28",
+		"send:super:numArgs:" : "sl 10/10/2018 22:29" } }
