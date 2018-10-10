@@ -1,4 +1,0 @@
-change
-updateLastValue
-
-	self updateMonitorsAndLastValue
