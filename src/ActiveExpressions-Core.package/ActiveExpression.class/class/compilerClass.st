@@ -1,0 +1,4 @@
+instance creation
+compilerClass
+
+	^ Compiler

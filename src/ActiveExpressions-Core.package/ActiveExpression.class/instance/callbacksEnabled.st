@@ -1,4 +1,4 @@
 accessing
 callbacksEnabled
 
-	^ callbacksEnabled ifNil: [callbacksEnabled := true]
+	^ callbacksEnabled ifNil: [true]

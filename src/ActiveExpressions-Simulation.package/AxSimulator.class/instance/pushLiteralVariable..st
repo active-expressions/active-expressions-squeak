@@ -2,5 +2,5 @@ instruction decoding
 pushLiteralVariable: anAssociation
 
 	anAssociation isSubscriptionsBinding ifFalse: [
-		litVarAccesses add: anAssociation].
+		self litVarAccesses add: anAssociation].
 	^ super pushLiteralVariable: anAssociation

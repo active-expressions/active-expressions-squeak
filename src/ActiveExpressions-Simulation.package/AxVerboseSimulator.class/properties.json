@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Simulation",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"depth" ],
+	"name" : "AxVerboseSimulator",
+	"pools" : [
+		 ],
+	"super" : "AxSimulator",
+	"type" : "normal" }

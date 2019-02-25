@@ -1,4 +1,4 @@
 change
 updateLastValue
 
-	self setLastValue: self currentValue
+	self subclassResponsibility
