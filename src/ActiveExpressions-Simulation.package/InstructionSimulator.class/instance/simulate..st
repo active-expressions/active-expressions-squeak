@@ -10,4 +10,4 @@ simulate: aBlock
 	[currentContext == topContext]
 		whileFalse:
 			[currentContext := currentContext interpretNextInstructionFor: self].
-	^ topContext pop
+	result := topContext pop

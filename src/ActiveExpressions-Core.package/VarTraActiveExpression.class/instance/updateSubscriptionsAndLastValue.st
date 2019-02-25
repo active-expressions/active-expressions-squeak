@@ -1,9 +1,11 @@
 change detection
 updateSubscriptionsAndLastValue
 
-	| dependencies newValue |
-	dependencies := Dictionary new.
-	[newValue := (self simulateExpressionAndCollectDependenciesInto: dependencies)] 
+	| simulator |
+	simulator := AxSimulator new.
+	[simulator simulate: [monitoredBlock value].
+	self updateSubscriptions: simulator]
 		on: Error
 		do: [^ self].
-	self setLastValue: newValue
+	self setLastValue: simulator result.
+	

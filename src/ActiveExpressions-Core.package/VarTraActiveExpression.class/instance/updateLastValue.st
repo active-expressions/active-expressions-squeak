@@ -1,4 +1,4 @@
 change detection
 updateLastValue
 
-	self updateSubscipriontsAndLastValue
+	self updateSubscriptionsAndLastValue
