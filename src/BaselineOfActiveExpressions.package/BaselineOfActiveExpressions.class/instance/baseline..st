@@ -3,12 +3,10 @@ baseline: spec
 	<baseline>
 	spec for: #common do: [
 		spec
-			project: 'RefactoringBrowser' with: [
-				spec
-					className: 'ConfigurationOfRefactoringBrowser';
-					versionString: #'stable';
-					loads: #( 'AST-Core' );
-					repository: 'http://www.squeaksource.com/MetacelloRepository'].
+			baseline: 'VarTra' with: [
+				spec repository: 'github://stlutz/VarTra:master/src'];
+			baseline: 'DynamicLayers' with: [
+				spec repository: 'github://stlutz/DynamicLayers:master/src'].
 		spec
 			package: 'ActiveExpressions-ChangeDetection' with: [
 				spec requires: #('RefactoringBrowser')];
