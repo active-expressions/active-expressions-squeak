@@ -8,19 +8,18 @@ baseline: spec
 			baseline: 'DynamicLayers' with: [
 				spec repository: 'github://stlutz/DynamicLayers:master/src'].
 		spec
-			package: 'ActiveExpressions-ChangeDetection' with: [
-				spec requires: #('RefactoringBrowser')];
-			package: 'ActiveExpressions-Core' with: [
-				spec requires: #('ChangeDetection')];
+			package: 'ActiveExpressions-Core';
+			package: 'ActiveExpressions-Synchronous' with: [
+				spec requires: #('Core' 'VarTra' 'DynamicLayers')];
 			package: 'ActiveExpressions-Tests' with: [
-				spec requires: #('Core')];
+				spec requires: #('Core' 'Synchronous')];
 			package: 'ActiveExpressions-Examples' with: [
-				spec requires: #('Core' 'ChangeDetection')].
+				spec requires: #('Core' 'Synchronous')].
 		spec
 			group: 'Core' with: #('ActiveExpressions-Core');
-			group: 'ChangeDetection' with: #('ActiveExpressions-ChangeDetection');
+			group: 'Synchronous' with: #('ActiveExpressions-Synchronous');
 			group: 'Examples' with: #('ActiveExpressions-Examples');
 			group: 'Tests' with: #('ActiveExpressions-Tests');
-			group: 'default' with: #('Core' 'ChangeDetection' 'Tests' 'Examples');
-			group: 'CompleteWithoutTests' with: #('Core' 'ChangeDetection' 'Examples');
+			group: 'default' with: #('Core' 'Synchronous' 'Tests' 'Examples');
+			group: 'CompleteWithoutTests' with: #('Core' 'Synchronous' 'Examples');
 			group: 'CompleteWithTests' with: #('CompleteWithoutTests' 'Tests')]
