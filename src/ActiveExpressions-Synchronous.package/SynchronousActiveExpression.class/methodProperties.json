@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"dispose" : "sl 10/10/2018 10:06",
+		"generateTempNameMap" : "stlu 3/14/2019 02:00",
+		"instVarNamed:ofObject:changedFrom:to:inContext:" : "stlu 7/29/2019 09:03",
+		"install" : "stlu 4/12/2019 22:29",
+		"litVar:changedFrom:to:inContext:" : "stlu 7/29/2019 09:03",
+		"simulateMonitoredBlock" : "stlu 4/12/2019 22:18",
+		"tempNameMap" : "stlu 3/14/2019 01:52",
+		"tempVarNamed:changedFrom:to:inContext:" : "stlu 7/29/2019 09:03",
+		"trackCurrentDependencies" : "stlu 4/12/2019 22:25",
+		"uninstall" : "stlu 4/12/2019 22:57",
+		"updateLastValue" : "stlu 4/12/2019 22:26",
+		"updateSubscriptions:" : "stlu 3/14/2019 02:06" } }

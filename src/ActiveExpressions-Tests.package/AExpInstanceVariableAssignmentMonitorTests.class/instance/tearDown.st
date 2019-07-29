@@ -1,5 +1,0 @@
-running
-tearDown
-
-	subclassedPublisher unmonitorAllVariables.
-	publisher unmonitorAllVariables

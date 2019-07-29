@@ -1,0 +1,12 @@
+- tests
+  - simulation
+    - quick methods
+    - performs
+    - finds accesses to instVars / tempVars / litVars
+      - when assignment result is used
+      - normally
+    - correct result
+- AxLayer
+- remember potential side effects during simulation
+- fix baseline
+- update README

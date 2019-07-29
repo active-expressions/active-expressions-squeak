@@ -1,7 +1,8 @@
 {
 	"class" : {
 		"compilerClass" : "sl 10/12/2018 09:59",
-		"monitoring:" : "sl 12/26/2017 18:55" },
+		"defaultType" : "stlu 7/29/2019 08:53",
+		"on:" : "stlu 7/29/2019 13:54" },
 	"instance" : {
 		"addCallback:" : "sl 1/10/2018 19:51",
 		"callbacks" : "sl 1/10/2018 19:27",

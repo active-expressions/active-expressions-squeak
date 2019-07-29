@@ -1,0 +1,1 @@
+I simulate a block to determine all variables accessed during its execution.

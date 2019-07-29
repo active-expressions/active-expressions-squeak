@@ -1,4 +1,4 @@
 *ActiveExpressions-Core
 onChangeDo: aBlock
 
-	^ (ActiveExpression monitoring: self) onChangeDo: aBlock
+	^ (ActiveExpression on: self) onChangeDo: aBlock

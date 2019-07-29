@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Synchronous",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"layers" ],
+	"name" : "LayeredActiveExpression",
+	"pools" : [
+		 ],
+	"super" : "SynchronousActiveExpression",
+	"type" : "normal" }

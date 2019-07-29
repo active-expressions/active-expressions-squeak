@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "stlu 3/13/2019 10:56",
+		"instVarAccessed:of:" : "sl 2/25/2019 13:27",
+		"instVarAccesses" : "sl 10/10/2018 21:46",
+		"litVarAccesses" : "sl 10/10/2018 21:46",
+		"pushLiteralVariable:" : "sl 2/25/2019 12:12",
+		"pushReceiverVariable:" : "sl 2/25/2019 13:07",
+		"pushRemoteTemp:inVectorAt:" : "stlu 3/18/2019 15:57",
+		"pushTemporaryVariable:" : "stlu 3/18/2019 15:55",
+		"send:super:numArgs:" : "stlu 3/3/2019 23:14",
+		"storeIntoReceiverVariable:" : "stlu 3/18/2019 15:54",
+		"storeIntoTemporaryVariable:" : "stlu 3/18/2019 15:55",
+		"tempVarAccessed:" : "stlu 3/18/2019 15:56",
+		"tempVarAccesses" : "stlu 3/3/2019 23:19" } }

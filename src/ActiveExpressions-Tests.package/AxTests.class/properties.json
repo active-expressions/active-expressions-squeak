@@ -1,0 +1,19 @@
+{
+	"category" : "ActiveExpressions-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"value",
+		"activeExpression",
+		"callbackCount",
+		"callback",
+		"expression",
+		"lastValue" ],
+	"name" : "AxTests",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

@@ -1,0 +1,21 @@
+{
+	"class" : {
+		"isAbstract" : "stlu 7/29/2019 14:15" },
+	"instance" : {
+		"expressionType" : "stlu 7/29/2019 14:16",
+		"newValue" : "sl 1/12/2018 10:18",
+		"previousValue" : "sl 1/12/2018 10:22",
+		"setUp" : "stlu 7/29/2019 14:16",
+		"tearDown" : "sl 2/4/2018 16:50",
+		"testCallbackInvocationWhenValueIdentityHasChanged" : "sl 1/12/2018 10:20",
+		"testCallbackInvocationWith1Argument" : "sl 1/12/2018 10:21",
+		"testCallbackInvocationWith2Arguments" : "sl 1/12/2018 10:23",
+		"testCallbackInvocationWithMoreThan3ArgumentsFails" : "stlu 7/29/2019 14:40",
+		"testDisable" : "sl 2/5/2018 22:10",
+		"testEnable" : "sl 2/5/2018 22:13",
+		"testInitializesToCurrentValue" : "sl 1/12/2018 10:19",
+		"testNoCallbackInvocationWhenValueIdentityHasNotChanged" : "sl 12/26/2017 18:57",
+		"testPrintingShowsSourceOfMonitoredBlock" : "sl 12/26/2017 20:56",
+		"testRemembersOldValue" : "sl 1/12/2018 10:22",
+		"testUnregisteredCallbacksAreNotInvoked" : "sl 1/12/2018 10:23",
+		"testUnregisteringAllCallbacks" : "sl 1/12/2018 10:23" } }

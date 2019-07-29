@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Synchronous",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tempNameMap" ],
+	"name" : "SynchronousActiveExpression",
+	"pools" : [
+		 ],
+	"super" : "ActiveExpression",
+	"type" : "normal" }

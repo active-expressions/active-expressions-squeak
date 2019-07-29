@@ -1,9 +1,0 @@
-{
-	"class" : {
-		 },
-	"instance" : {
-		"expectedFindings" : "sl 1/13/2018 00:05",
-		"setUp" : "sl 1/17/2018 17:00",
-		"testAutomaticChangePropagation" : "sl 10/10/2018 10:16",
-		"testInstVarsInMethodsWithKeywordMessagesAreFound" : "sl 10/10/2018 10:16",
-		"testInstVarsInQuickMethodsAreFound" : "sl 10/10/2018 10:16" } }

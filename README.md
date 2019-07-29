@@ -1,10 +1,10 @@
-# Squeak-ActiveExpressions [![Build Status][travis_b]][travis_url] [![Coverage Status][coveralls_b]][coveralls_url]
+# ActiveExpression/S [![Build Status][travis_b]][travis_url] [![Coverage Status][coveralls_b]][coveralls_url]
 
-Squeak-ActiveExpressions aims to offer an implementation of [Active Expressions] in Squeak.
+ActiveExpression/S aims to offer an implementation of [Active Expressions] in [Squeak/Smalltalk][Squeak].
 
 ## Installation Instructions
 
-ActiveExpressions are compatible with Squeak-5.1 and Squeak-trunk (check Travis for more information). First install the latest [Metacello], then you can use the following code to load ActiveExpressions and all their prerequisites:
+ActiveExpression/S is compatible with Squeak-5.2 and Squeak-trunk (check Travis for more information). First install the latest [Metacello], then you can use the following code to load ActiveExpression/S and all its prerequisites:
 
 ```
 Metacello new
@@ -105,6 +105,8 @@ A more complete implementation of Active Expressions in JavaScript which is also
 
 [Active Expressions]: http://programming-journal.org/2017/1/12/
 [JavaScript Implementation]: https://github.com/active-expressions/active-expressions
+
+[Squeak]: https://squeak.org
 [Metacello]: https://github.com/Metacello/metacello
 
 [Issues]: https://github.com/stlutz/Squeak-ActiveExpressions/tree/master/src/ActiveExpressions-Examples.package/AExpIssues.class

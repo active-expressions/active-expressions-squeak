@@ -1,0 +1,16 @@
+{
+	"category" : "ActiveExpressions-Synchronous",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"topContext",
+		"currentContext",
+		"result" ],
+	"name" : "AxInstructionSimulator",
+	"pools" : [
+		 ],
+	"super" : "InstructionClient",
+	"type" : "normal" }

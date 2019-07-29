@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Synchronous",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"expressions" ],
+	"name" : "AxLayer",
+	"pools" : [
+		 ],
+	"super" : "Layer",
+	"type" : "normal" }

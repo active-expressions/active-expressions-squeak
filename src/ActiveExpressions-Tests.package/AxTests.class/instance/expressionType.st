@@ -1,0 +1,4 @@
+expression type
+expressionType
+
+	self subclassResponsibility
