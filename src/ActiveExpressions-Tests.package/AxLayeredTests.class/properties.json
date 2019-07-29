@@ -1,0 +1,14 @@
+{
+	"category" : "ActiveExpressions-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AxLayeredTests",
+	"pools" : [
+		 ],
+	"super" : "AxTests",
+	"type" : "normal" }
