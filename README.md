@@ -103,7 +103,7 @@ The original and more complete implementation of active expressions in JavaScrip
 
 
 <!-- References -->
-[travis_b]: https://travis-ci.org/active-expressions/active-expressions-squeak?branch=master
+[travis_b]: https://travis-ci.org/active-expressions/active-expressions-squeak.svg?branch=master
 [travis_url]: https://travis-ci.org/active-expressions/active-expressions-squeak
 [coveralls_b]: https://coveralls.io/repos/github/active-expressions/active-expressions-squeak/badge.svg?branch=master
 [coveralls_url]: https://coveralls.io/github/active-expressions/active-expressions-squeak?branch=master
