@@ -23,13 +23,18 @@ aexp := ActiveExpression on: ["expression"]
 ```
 
 The expression **should not contain any side effects**. <br>
-Programmers can now subscribe callbacks to the created active expression:
+Programmers can now register callbacks on the created active expression:
 
 ```smalltalk
 aexp onChangeDo: ["callback"]
 ```
 
-Whenever the active expression is updated/checked, the value of its expression at the previous update and the current value are compared. If the two values differ, all callbacks are invoked. There are different methods for when to update:
+Whenever the active expression is updated/checked, the value of its expression at the previous update and the current value are compared. If the two values differ, all callbacks are invoked.
+
+The comparison between the current value and the previous value is based on object identity. Value objects (like e.g. `Point` and `Rectangle`) have a tendency to change identity without being perceived by the programmer as having changed. These changes will be reacted upon by callbacks. The expression `'800@600'` for example will always invoke all callbacks upon updating.
+
+### Update Methods
+There are multiple types of active expressions that differ in how and when they update.
 
 #### Manual
 Update whenever the programmer manually causes an update.
@@ -56,7 +61,6 @@ aMorph position: 100@100. "~~> causes automatic update"
 
 The implementation relies on [variable tracking][VarTra]. That means the expression is simulated to find all variables accessed during its evaluation. This method, however, has various limitations:
   - When listening and reacting to all variable assignments, it is possible to accidentally try to use an object in an undefined state (e.g. during an atomic operation with 2 variable assignments). This might either create an error (which will simply be ignored, aborting the update) or update successfully. In case of the latter, callbacks will be triggered and potentially lead to work being done with this currently corrupted state.
-  - When updating an ActiveExpression, the comparison between the current value and the previous value is based on object identity. Value objects (like e.g. `Point` and `Rectangle`) have a tendency to change identity without being perceived by the programmer as having changed. These changes might be reacted upon by ActiveExpressions. The following expression for example will always invoke all callbacks upon updating: `ActiveExpression monitoring: [1@1]`.
   - Changes to variables made through primitives are not intercepted. Most notably this prevents the monitoring of Collections, since any changes made to the collection's array will not be noticed. In theory it should be possible to fix this problem by intercepting all calls to `Object>>at:put:`.
 
 Some code examples for the above-mentioned problems can be found in the class `AExpIssues` found in the `ActiveExpressions-Examples` package. ([Link][Issues])
