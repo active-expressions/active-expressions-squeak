@@ -1,57 +1,71 @@
 # ActiveExpression/S [![Build Status][travis_b]][travis_url] [![Coverage Status][coveralls_b]][coveralls_url]
 
-ActiveExpression/S aims to offer an implementation of [Active Expressions] in [Squeak/Smalltalk][Squeak].
+
+ActiveExpression/S is an implementation of [active expressions][original paper] for [Squeak/Smalltalk][Squeak].
+
+*This README is **under construction**. Some sections might not correctly reflect the current state of the project.*
 
 ## Installation Instructions
-
-ActiveExpression/S is compatible with Squeak-5.2 and Squeak-trunk (check Travis for more information). First install the latest [Metacello], then you can use the following code to load ActiveExpression/S and all its prerequisites:
+[Check Travis][travis_url] to see whether your version of Squeak is supported. Make sure to have the latest [Metacello] installed. Then you can execute the following code to load the project and all its prerequisites:
 
 ```
 Metacello new
   baseline: 'ActiveExpressions';
-  repository: 'github://stlutz/Squeak-ActiveExpressions/src';
+  repository: 'github://stlutz/active-expressions/active-expressions-squeak/src';
   load.
 ```
 
 ## Usage
+An ActiveExpression requires an expression as its description of state. Expressions in this implementation are represented by block closures. Creating an active expression therefore only requires a block:
 
-An ActiveExpression requires an expression as its description of state. Expressions in this implementation are represented by BlockClosures. Creating an ActiveExpression therefore only requires a block:
 ```smalltalk
-aexp := ActiveExpression monitoring: ["expression"]
+aexp := ActiveExpression on: ["expression"]
 ```
-(Please note that an ActiveExpression's expression should not contain any side effects.) <br>
-Programmers can now subscribe callbacks to the created ActiveExpression:
+
+The expression **should not contain any side effects**. <br>
+Programmers can now subscribe callbacks to the created active expression:
+
 ```smalltalk
 aexp onChangeDo: ["callback"]
 ```
-Whenever the ActiveExpression is updated/checked, the value of its expression at the previous update and the current value are compared. If the two values differ, all callbacks are invoked. There are different methods for when to update:
 
-#### Convention
-Update whenever the programmer manually causes an update through `ActiveExpression>>update`.
+Whenever the active expression is updated/checked, the value of its expression at the previous update and the current value are compared. If the two values differ, all callbacks are invoked. There are different methods for when to update:
+
+#### Manual
+Update whenever the programmer manually causes an update.
+
 ```smalltalk
 aMorph := Morph new.
-aexp := ActiveExpression monitoring: [aMorph position].
+aexp := ManualActiveExpression on: [aMorph position].
 aexp onChangeDo: [Transcript show: aMorph position].
 aMorph position: 100@100.
 aexp update.
 "'100@100' is written to the Transcript"
 ```
 
-#### Monitoring Variables
-Update whenever a variable (instance, temporary, global, class) is changed. <br>
-(NOTE: Currently only changes to instance variables made through assignments can be caught and acted upon.)
+#### Synchronous
+Update synchronously whenever the value of the monitored expression changes.
+
 ```smalltalk
 aMorph := Morph new.
-aexp := MonitoringActiveExpression monitoring: [aMorph position].
+aexp := SynchronousActiveExpression on: [aMorph position].
 aexp onChangeDo: [Transcript show: aMorph position].
 aMorph position: 100@100. "~~> causes automatic update"
 "'100@100' is written to the Transcript"
 ```
 
+The implementation relies on [variable tracking][VarTra]. That means the expression is simulated to find all variables accessed during its evaluation. This method, however, has various limitations:
+  - When listening and reacting to all variable assignments, it is possible to accidentally try to use an object in an undefined state (e.g. during an atomic operation with 2 variable assignments). This might either create an error (which will simply be ignored, aborting the update) or update successfully. In case of the latter, callbacks will be triggered and potentially lead to work being done with this currently corrupted state.
+  - When updating an ActiveExpression, the comparison between the current value and the previous value is based on object identity. Value objects (like e.g. `Point` and `Rectangle`) have a tendency to change identity without being perceived by the programmer as having changed. These changes might be reacted upon by ActiveExpressions. The following expression for example will always invoke all callbacks upon updating: `ActiveExpression monitoring: [1@1]`.
+  - Changes to variables made through primitives are not intercepted. Most notably this prevents the monitoring of Collections, since any changes made to the collection's array will not be noticed. In theory it should be possible to fix this problem by intercepting all calls to `Object>>at:put:`.
+
+Some code examples for the above-mentioned problems can be found in the class `AExpIssues` found in the `ActiveExpressions-Examples` package. ([Link][Issues])
+
 #### Polling
 Update whenever a fixed duration has passed.
+
 ```smalltalk
-This is not yet implemented.
+self notYetImplemented
 ```
 
 ### Quick Reference
@@ -67,7 +81,8 @@ This is not yet implemented.
 | `ActiveExpression>>enable` | (Re-)Enables all callbacks. Callbacks are enabled by default. |
 
 #### Callbacks
-Callbacks are BlockClosures with up to 2 arguments. The optional arguments reference the new and the old value of the ActiveExpression's expression. Upon invocation of the callback these arguments are passed automatically into the callback as follows:
+Callbacks are block closures with up to 2 arguments. The optional arguments reference the new and the old value of the expression. Upon invocation of the callback these arguments are passed automatically into the callback as follows:
+
 ```smalltalk
 ["callback with 0 args"]
 [:newValue | "callback with 1 arg"]
@@ -75,41 +90,29 @@ Callbacks are BlockClosures with up to 2 arguments. The optional arguments refer
 ```
 
 #### Syntactic Sugar
-ActiveExpressions can also be more easily created by directly passing `onChangeDo:` to a BlockClosure:
+Active expressions can also be more easily created by directly passing `onChangeDo:` to a BlockClosure:
+
 ```smalltalk
 aexp := ["expression"] onChangeDo: ["callback"].
 ```
-Note though, that the resulting ActiveExpression will be of the class `ActiveExpression` and therefore will have to be update manually.
 
-## Issues
-At the moment there are several problems with this implementation of ActiveExpressions. Most of them come with the very invasive nature of the "monitoring variables" approach of detecting changes:
-- When listening and reacting to all variable assignments, it is possible to accidentally try to use an object in an undefined state (e.g. during an atomic operation with 2 variable assignments). This might either create an error (which will simply be ignored, aborting the update) or update successfully. In case of the latter, callbacks will be triggered and potentially lead to work being done with this currently corrupted state.
-- When updating an ActiveExpression, the comparison between the current value and the previous value is based on object identity. Value objects (like e.g. `Point` and `Rectangle`) have a tendency to change identity without being perceived by the programmer as having changed. These changes might be reacted upon by ActiveExpressions. The following expression for example will always invoke all callbacks upon updating: `ActiveExpression monitoring: [1@1]`.
-- When trying to monitor all relevant instance variable assignments throughout the system, the methods in which these assignments occur are recompiled to contain intercepting code. While all following message sends might invoke these new methods, already invoked methods are not changed. This is not a conceptual problem, since it could be possible to rewrite all contexts referencing the old method to update to the rewritten ones.
-- Changes to instance variables made through primitives cannot be intercepted unless it is known which primitives influence which variables. Most notably this prevents the monitoring of Collections, since any changes made to the collection's array will not be noticed. In theory it should be possible to fix this problem with collections by intercepting all calls to `Object>>at:put:`.
+Note though, that the resulting active expression will be of the default type defined in `ActiveExpression class>>defaultType`.
 
-Some code examples for the above-mentioned problems can be found in the class `AExpIssues` found in the `ActiveExpressions-Examples` package. ([Link][Issues])
-
-## History
-
-This project was started as part of the [Software Architecture Group]'s seminar «Programming Languages: Design and Implementation» held at the [Hasso-Plattner Institute][HPI].
-
-A more complete implementation of Active Expressions in JavaScript which is also referenced in the [original paper][Active Expressions] can be found [here][JavaScript Implementation].
+## Acknowledgements
+The original and more complete implementation of active expressions in JavaScript which was referenced in the [original paper] can be found [here][JavaScript Implementation].
 
 
 <!-- References -->
-[travis_b]: https://travis-ci.org/stlutz/Squeak-ActiveExpressions.svg?branch=master
-[travis_url]: https://travis-ci.org/stlutz/Squeak-ActiveExpressions
-[coveralls_b]: https://coveralls.io/repos/github/stlutz/Squeak-ActiveExpressions/badge.svg?branch=master
-[coveralls_url]: https://coveralls.io/github/stlutz/Squeak-ActiveExpressions?branch=master
+[travis_b]: https://travis-ci.org/active-expressions/active-expressions-squeak?branch=master
+[travis_url]: https://travis-ci.org/active-expressions/active-expressions-squeak
+[coveralls_b]: https://coveralls.io/repos/github/active-expressions/active-expressions-squeak/badge.svg?branch=master
+[coveralls_url]: https://coveralls.io/github/active-expressions/active-expressions-squeak?branch=master
 
-[Active Expressions]: http://programming-journal.org/2017/1/12/
+[original paper]: http://programming-journal.org/2017/1/12/
 [JavaScript Implementation]: https://github.com/active-expressions/active-expressions
 
 [Squeak]: https://squeak.org
 [Metacello]: https://github.com/Metacello/metacello
+[VarTra]: https://github.com/stlutz/VarTra
 
-[Issues]: https://github.com/stlutz/Squeak-ActiveExpressions/tree/master/src/ActiveExpressions-Examples.package/AExpIssues.class
-
-[Software Architecture Group]: https://www.hpi.uni-potsdam.de/swa
-[HPI]: https://hpi.de
+[Issues]: ./src/ActiveExpressions-Examples.package/AExpIssues.class/
