@@ -11,7 +11,7 @@ ActiveExpression/S is an implementation of [active expressions][original paper] 
 ```
 Metacello new
   baseline: 'ActiveExpressions';
-  repository: 'github://stlutz/active-expressions/active-expressions-squeak/src';
+  repository: 'github://active-expressions/active-expressions-squeak/src';
   load.
 ```
 
